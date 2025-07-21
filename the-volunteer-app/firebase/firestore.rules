@@ -1,0 +1,151 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /warehouses/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /warehouses/{parent}/warehouseProducts/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/warehouseProducts/{document} {
+      allow read: if true;
+    }
+
+
+    match /warehouses/{parent}/wh_postCodes/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/wh_postCodes/{document} {
+      allow read: if true;
+    }
+
+
+    match /products/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /coreTotals/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /orders/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /batches/{document} {
+      allow create: if true;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /payments/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /deliveries/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /users/{parent}/volunteer_totals/{document} {
+      allow create: if request.auth.uid == parent;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/volunteer_totals/{document} {
+      allow read: if true;
+    }
+
+
+    match /warehouses/{parent}/wh_damagedProduct/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/wh_damagedProduct/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/volunteer_assignedProducts/{document} {
+      allow create: if request.auth.uid == parent;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/volunteer_assignedProducts/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/volunteer_postCodes/{document} {
+      allow create: if request.auth.uid == parent;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/volunteer_postCodes/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/volunteerDamagedProduct/{document} {
+      allow create: if request.auth.uid == parent;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/volunteerDamagedProduct/{document} {
+      allow read: if true;
+    }
+
+
+    match /orderItems/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+  }
+}

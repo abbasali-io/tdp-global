@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "942991547186",
+    "project_id": "tdp-25",
+    "storage_bucket": "tdp-25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942991547186:android:dc7c0dd428715e771ad52b",
+        "android_client_info": {
+          "package_name": "io.abbasali.thedateproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzaywMpFP5cY-3PeMIhudseWzWT5BQDL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "942991547186-a1nr6cov60iueuufrhknv68d8msrhp27.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.abbasali.thedateproject.volunteers"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942991547186:android:a19efc930f1794f11ad52b",
+        "android_client_info": {
+          "package_name": "io.abbasali.thedateproject.leads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942991547186-lm1dcvkf3drn4v04dde5qoqn35jphlj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.abbasali.thedateproject.leads",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzaywMpFP5cY-3PeMIhudseWzWT5BQDL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "942991547186-a1nr6cov60iueuufrhknv68d8msrhp27.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.abbasali.thedateproject.volunteers"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942991547186:android:2890deab26ec42ce1ad52b",
+        "android_client_info": {
+          "package_name": "io.abbasali.thedateproject.volunteers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942991547186-bit13vrkm8bmed13fh6pvmajoj8r3igu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.abbasali.thedateproject.volunteers",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzaywMpFP5cY-3PeMIhudseWzWT5BQDL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942991547186-e2dgn9hshm82o49ttmlsnji1fb4m3eet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "942991547186-a1nr6cov60iueuufrhknv68d8msrhp27.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.abbasali.thedateproject.volunteers"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

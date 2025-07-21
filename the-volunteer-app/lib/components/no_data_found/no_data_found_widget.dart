@@ -1,0 +1,82 @@
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'no_data_found_model.dart';
+export 'no_data_found_model.dart';
+
+class NoDataFoundWidget extends StatefulWidget {
+  const NoDataFoundWidget({super.key});
+
+  @override
+  State<NoDataFoundWidget> createState() => _NoDataFoundWidgetState();
+}
+
+class _NoDataFoundWidgetState extends State<NoDataFoundWidget> {
+  late NoDataFoundModel _model;
+
+  @override
+  void setState(VoidCallback callback) {
+    super.setState(callback);
+    _model.onUpdate();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => NoDataFoundModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.maybeDispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.cloud_off,
+              color: FlutterFlowTheme.of(context).lineColor,
+              size: 50.0,
+            ),
+          ],
+        ),
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 0.0, 0.0),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'No Data Found',
+                style: FlutterFlowTheme.of(context).titleSmall.override(
+                      font: GoogleFonts.sen(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                      ),
+                      color: FlutterFlowTheme.of(context).lineColor,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                    ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}

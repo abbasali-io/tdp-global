@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "883125540161",
+    "firebase_url": "https://the-date-projec-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "the-date-projec-app",
+    "storage_bucket": "the-date-projec-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883125540161:android:4cfb0aade7bacfd4fbbdc0",
+        "android_client_info": {
+          "package_name": "io.abbasali.thedateproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883125540161-kmcl8ikk9amhriid703tncacuega5urr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDfboYGAVrXa6kq8Urylr0DyNZYTKQ-p4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883125540161-kmcl8ikk9amhriid703tncacuega5urr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "883125540161-1ncfp2i2l5el6gcksm4jjj3v88ek4p07.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.abbasali.thedateproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
